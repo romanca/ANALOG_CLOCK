@@ -1,7 +1,7 @@
 import React from "react";
 import getTime from "../shared/getTime";
 
-const useTime = (city = "new-york") => {
+const useTime = (city) => {
   const [time, setTime] = React.useState(getTime(city));
 
   React.useEffect(() => {
